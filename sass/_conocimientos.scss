@@ -1,0 +1,22 @@
+.conoc{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.cono{
+    height: 200px;
+    width: 200px;
+    img{
+        height: 150px;
+        width: 150px;
+    }
+    h3{
+        font-size: 20px;
+        color: white;
+    }
+}

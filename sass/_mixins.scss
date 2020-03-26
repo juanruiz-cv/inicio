@@ -1,0 +1,10 @@
+section{
+    padding-top: 80px;
+    min-height:calc(100vh - 60px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}

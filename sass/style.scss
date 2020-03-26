@@ -1,0 +1,23 @@
+@import "variables";
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(to bottom, #E5E5BE, #003973);
+}
+h2{
+    font-size: 40px;
+}
+@import "header";
+@import "edu";
+@import "conocimientos";
+@import "idioma";
+@import "footer";
+@import "mixins";
