@@ -9,6 +9,10 @@ header{
     h1{
         text-shadow: 1px 1px 5px #000;
         line-height: 1.5;
+        a{
+            color: #000;
+            display: block;
+        }
     }
     #toogle-menu{
         cursor: pointer;
