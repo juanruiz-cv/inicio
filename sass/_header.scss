@@ -2,47 +2,43 @@ header{
     z-index: 1000;
     background-color: $blanco;
     color: $letra;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 15px;
     height: 60px;
     top: 0;
     position: sticky;
+    text-align: center;
     h1{
         text-shadow: 1px 1px 5px #000;
+        line-height: 1.5;
     }
-    nav{
-        background-color: darken($color: #494949, $amount: 9);
-        ul{
-            height: 60px;
+    #toogle-menu{
+        cursor: pointer;
+        line-height: 2;
+        color: #fff;
+        background-color: darken($color: #168, $amount: 5%);
+        font-size: 20px;
+
+        @media screen and (min-width:768px){
+            display: none;
+        }
+    }
+    .menu{
+        background-color: steelblue;
+        display: block;
+        @media screen and (min-width:768px) {
             display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
+            flex: auto;
             li{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                height: 60px;
-                a{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 0 15px;
-                    height: 60px;
-                    color: #fff;
-                    text-align: center;
-                }
+                flex: auto;
             }
-            :hover{
-                background: #15f;
-            }
+        }
+        a{
+            display: block;
+            color: #eee;
+            line-height: 3;
+            width: 100%;
+        }
+        :hover{
+            background: #15f;
         }
     }
 }
