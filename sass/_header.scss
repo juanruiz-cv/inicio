@@ -14,35 +14,42 @@ header{
             display: block;
         }
     }
-    #toogle-menu{
-        cursor: pointer;
-        line-height: 2;
-        color: #fff;
-        background-color: darken($color: #168, $amount: 5%);
-        font-size: 20px;
-
-        @media screen and (min-width:768px){
-            display: none;
-        }
-    }
     .menu{
         background-color: steelblue;
-        display: block;
-        @media screen and (min-width:768px) {
+        
+        @media screen and (min-width: 768px){
             display: flex;
-            flex: auto;
             li{
-                flex: auto;
+                border-right: 1px solid rgba(#000,0.2);
+                &:last-child{
+                    border-right: none;
+                }
             }
+        }
+        li{
+            flex: auto;
+            border-bottom: 1px solid rgba(#000,0.2);
         }
         a{
             display: block;
             color: #eee;
             line-height: 3;
             width: 100%;
+            &:hover{
+                background: #15f;
+            }
         }
-        :hover{
-            background: #15f;
+    }
+    #toogle-menu{
+        cursor: pointer;
+        font-weight: bold;;
+        line-height: 2;
+        color: #fff;
+        background-color: darken($color: #168, $amount: 5%);
+        font-size: 20px;
+        
+        @media screen and (min-width:768px){
+            display: none;
         }
     }
 }
