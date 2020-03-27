@@ -16,7 +16,7 @@ header{
     }
     .menu{
         background-color: steelblue;
-        
+        display: none;
         @media screen and (min-width: 768px){
             display: flex;
             li{
