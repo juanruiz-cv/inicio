@@ -1,10 +1,25 @@
 section{
-    padding-top: 80px;
-    min-height:calc(100vh - 60px);
+    padding-top: 88px;
+    min-height:calc(100vh - 88px);
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    background-attachment: fixed;
+    background-size: cover;
+    @media screen and (min-width: 768px){
+        padding-top: 120px;
+        min-height:calc(100vh - 96px);
+    }
+
+}
+.educacion{
+    background-image: url(../img/background-ed-720.jpg);
+    color: white;
+}
+.conocimientos{
+    background-image: url(../img/background720p.jpg);
+    color: white;
 }
